@@ -1,9 +1,9 @@
-import { Navbar } from "react-bootstrap";
+import { Box, Flex } from "rebass";
 
 export const RecommendedBar = () => {
     return (
-        <Navbar bg="red">
+        <Flex bg="red" width="100%" height="50px">
             
-        </Navbar>
+        </Flex>
     );
 };

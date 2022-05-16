@@ -1,14 +1,18 @@
-import { Navbar } from "react-bootstrap";
-import { Image } from "react-bootstrap";
+import { Flex, Image } from "rebass/styled-components";
 
 import MenuIcon from "../../img/MenuIcon.svg"
 import YoutubePremiumLogo from "../../img/YoutubePremiumLogo.svg";
 
 export const NavBar = () => {
     return (
-        <Navbar bg="white">
-            <Image src={MenuIcon} width="30" />
-            <Image src={YoutubePremiumLogo} width="100" />
-        </Navbar>
+        <Flex bg="white" px="2" width="1">
+            <Image src={MenuIcon} sx={{
+                width: [ "20px", "30px" ]
+            }} />
+            <Image paddingLeft="20px" src={YoutubePremiumLogo} sx={{
+                width: "100px",
+                height: "30px"
+            }} />
+        </Flex>
     );
 };

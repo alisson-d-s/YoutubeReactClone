@@ -1,7 +1,10 @@
+import { Box, Flex } from "rebass";
+
 export const SideBar = () => {
     return (
-        <div background-color="#f45d54">
-            kd
-        </div>
+        <Flex bg="black" color="white" justifyContent="top" height="100vh" width="180px">
+            <Flex px={2} height="100%" alignItems="center">
+            </Flex>
+        </Flex>
     );
 };
